@@ -1,7 +1,7 @@
-class AlnuoModel {
+class AlunoModel {
     constructor({ nome, _id, notas } = { notas: {} }) {
         this.nome = nome
-        this._id = _id !== undefined ? _id : this.generate()
+        this._id = _id !== undefined ? _id : this.generateId();
         this.notas = {...notas}
         this.media = {}
 
@@ -11,9 +11,9 @@ class AlnuoModel {
     }
 
     generateId() {
-        AlnuoModel.maxId += 1
-        return AlnuoModel.maxId
+        AlunoModel.maxId += 1
+        return AlunoModel.maxId
     }
 }
 
-AlnuoModel.maxId = 0
+AlunoModel.maxId = 0
