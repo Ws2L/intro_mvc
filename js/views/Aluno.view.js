@@ -20,7 +20,7 @@ class AlunoView{
         this.tableHeader.appendChild(htmlHeader)
     }
 
-    render(alunos) {
+    render( ) {
         this.tableBody.innerHTML = ''
         alunos.forEach(aluno => {
             let htmlRow = document.createElement('tr')
