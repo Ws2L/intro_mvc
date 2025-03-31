@@ -33,7 +33,7 @@ class AlunoService {
         }
         alunos.forEach(aluno => {
             this.add(new AlunoModel(aluno))
-        })
+        });
     }
     //guardar set
     //ler get
